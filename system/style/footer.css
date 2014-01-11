@@ -1,0 +1,11 @@
+#footer{
+	position: relative;
+	top:-8px;
+	left: -8px;
+	width: 100%;
+	min-height: 50px;
+}
+.footer{
+	background: #eee;
+	border-top: 1px solid #ccc;
+}

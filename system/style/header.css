@@ -1,0 +1,11 @@
+#header{
+	position: relative;
+	top:-8px;
+	left: -8px;
+	width: 100%;
+	min-height: 70px;
+}
+.header{
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+}

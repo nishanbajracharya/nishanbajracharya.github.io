@@ -1,0 +1,7 @@
+body{
+	font-family: 'robotoregular';
+	user-select: none;
+	background: #eee;
+	overflow-x:hidden; 
+	width: 100%;
+}
