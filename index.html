@@ -8,10 +8,44 @@
 	<link rel="stylesheet" type="text/css" href="system/style/footer.css">
 
 	<script type="text/javascript" src="system/scripts/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="system/scripts/datetime.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(".sidebar ul li").click(function(){
+			$(".sidebar ul li").removeClass('highlighted');
+			$(this).addClass('highlighted');
+		});
+	})
+	</script>
 </head>
 <body>
-	<div id="header" class="header"></div>
-	<div id="content" class="content"></div>
-	<div id="footer" class="footer"></div>
+	<div id="header" class="header">
+		<center>
+			<span style="float:left; margin-left:4px;"><a href="http://www.github.com/Nishan13" target="_blank">Nishan13's Github</a></span>
+			<span id="datetime"></span>
+			<span style="float:right; margin-right:4px;"><a href="http://www.github.com" target="_blank">Github</a></span>
+		</center>
+	</div>
+	<div id="content" class="content">
+		<center>
+			<div id="window" class="window">
+				<div id="sidebar" class="sidebar">
+					<p><strong>My Projects</strong></p>
+					<ul>
+						<li>Cloud nOS</li>
+						<li>Custom CSS Class</li>
+						<li>Mac On The Web</li>
+						<li>Webcode Testing</li>
+					</ul>
+					<p><strong>Contributions</strong></p>
+					<ul>
+						<li>mozilla-nepal.org</li>
+						<li>hcoedevcircle.github.io</li>
+						<li>looma-f5</li>
+					</ul>
+				</div>
+			</div>
+		</center>
+	</div>
 </body>
 </html>

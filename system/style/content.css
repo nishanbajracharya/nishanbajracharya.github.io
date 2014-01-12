@@ -5,6 +5,50 @@
 	width: 100%;
 	min-height: 550px;
 }
-.content{
-	background: #fff;
+#window{
+	position: relative;
+	top:30px;
+	width: 95%;
+	height: 90%;
+}
+.window{
+	background: rgba(255,255,255,1);
+	color: #000;
+	border: 3px solid #000;
+	border-radius: 4px;
+}
+#window #sidebar{
+	width: 300px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.window .sidebar{
+	background: #eee;
+	border-right:1px solid #ccc; 
+}
+.sidebar ul{
+	text-align: left;
+	list-style: none;
+	margin-left: -40px;
+}
+.sidebar ul li{
+	padding: 2px 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer; 
+	transition:.2s;
+}
+.sidebar ul li:first-child{
+	border-top: 1px solid #ccc;
+}
+.sidebar ul li:hover{
+	background-color: #2478d8;
+}
+.sidebar ul li:active{
+	background-color: #2478d8;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
+.highlighted{
+	background: #2478d8;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
 }

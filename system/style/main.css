@@ -1,7 +1,18 @@
 body{
 	font-family: 'robotoregular';
 	user-select: none;
-	background: #eee;
-	overflow-x:hidden; 
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	background: url(../images/background.jpg);
+	background-size: cover;
+	overflow:hidden; 
 	width: 100%;
+	cursor: default;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+a:hover{
+	color: #000;
 }
