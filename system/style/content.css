@@ -16,6 +16,7 @@
 	color: #000;
 	border: 3px solid #000;
 	border-radius: 4px;
+	transition:.3s;
 }
 #window #sidebar{
 	width: 300px;
