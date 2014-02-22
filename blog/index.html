@@ -8,31 +8,6 @@
 
 	<script type="text/javascript" src="../system/scripts/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="../system/scripts/datetime.js"></script>
-	<script type="text/javascript">
-	$(function(){
-		n=1;
-		$(".sidebar ul li").click(function(){
-			n=$(this).index()+1
-			if(n>5){
-				n--;
-			}
-			$("#info div").fadeOut();
-			$("#info div:nth-child("+n+")").delay(500).fadeIn();
-			$(".sidebar ul li").removeClass('highlighted');
-			$(this).addClass('highlighted');
-		})
-		function infoSize(){
-			infoWidth=$("#window").width()-300;
-			infoHeight=$("#window").height();
-			$("#info").width(infoWidth);
-			$("#info").height(infoHeight);
-		}
-		infoSize();
-		$(window).resize(function(){
-			infoSize();
-		})
-	})
-	</script>
 </head>
 <body oncontextmenu="return false">
 	<div id="header" class="header">
@@ -45,93 +20,7 @@
 	<div id="content" class="content">
 		<center>
 			<div id="window" class="window">
-				<div id="sidebar" class="sidebar">
-					<p><strong>My Projects</strong></p>
-					<ul>
-						<li class="highlighted">Cloud nOS</li>
-						<li>Custom CSS Class</li>
-						<li>Mac On The Web</li>
-						<li>Webcode Testing</li>
-						<li>Web Fiddle</li>
-
-						<p style="text-align:center"><strong>Contributions</strong></p>
-
-						<li style="border-top: 1px solid #ccc;">mozilla-nepal.org</li>
-						<li>hcoedevcircle.github.io</li>
-						<li>looma-f5</li>
-					</ul>
-				</div>
-				<div id="info" class="info">
-					<div style="display:block;">
-						<p id="title"><strong>Cloud nOS</strong></p>
-						<p>Author : <a href="http://www.github.com/Nishan13" target="_blank">Nishan Bajracharya</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/Nishan13/nOS" target="_blank">Cloud nOS github</a></p>
-						<p>Project Demo : <a href="http://nishan13.github.io/nOS" target="_blank">Cloud nOS gh-pages</a></p>
-						<p>Status : Work In Progress</p><br>
-						<center><img src="system/images/projects/nOS.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>Custom CSS Class</strong></p>
-						<p>Author : <a href="http://www.github.com/Nishan13" target="_blank">Nishan Bajracharya</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/Nishan13/CSS_baseclass" target="_blank">Custom CSS Class github</a></p>
-						<p>Project Demo : <a href="http://nishan13.github.io/CSS_baseclass/" target="_blank">Custom CSS Class gh-pages</a></p>
-						<p>Status : Completed. New Version Pending.</p><br>
-						<center><img src="system/images/projects/css_baseclass.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>Mac On The Web</strong></p>
-						<p>Author : <a href="http://www.github.com/Nishan13" target="_blank">Nishan Bajracharya</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/Nishan13/mac_on_the_web" target="_blank">Mac On The Web github</a></p>
-						<p>Project Demo : <a href="http://nishan13.github.io/mac_on_the_web" target="_blank">Mac On The Web gh-pages</a></p>
-						<p>Status : Broken</p><br>
-						<center><img src="system/images/projects/mac_on_the_web.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>Webcode Testing</strong></p>
-						<p>Author : <a href="http://www.github.com/Nishan13" target="_blank">Nishan Bajracharya</a></p>
-						<p>Developed In : Flash</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/Nishan13/Web_Code_Testing_Source" target="_blank">Webcode Testing</a></p>
-						<p>Project Demo : Not Available</p>
-						<p>Status : Complete</p><br>
-						<center><img src="system/images/projects/web_code_testing.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>Web Fiddle</strong></p>
-						<p>Author : <a href="http://www.github.com/Nishan13" target="_blank">Nishan Bajracharya</a></p>
-						<p>Developed In : HTML, CSS, JS, PHP</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/Nishan13/webfiddle" target="_blank">Web Fiddle</a></p>
-						<p>Project Demo : Not Available</p>
-						<p>Status : Complete. New Version Pending.</p><br>
-						<center><img src="system/images/projects/webfiddle.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>mozilla-nepal.org</strong></p>
-						<p>Author : <a href="https://github.com/nootanghimire" target="_blank">Nootan Ghimire</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/nootanghimire/mozilla-nepal.org" target="_blank">mozilla-nepal.org github</a></p>
-						<p>Project Demo : <a href="http://nootanghimire.github.io/mozilla-nepal.org" target="_blank">mozilla-nepal.org gh-pages</a></p>
-						<p>Status : Work In Progress</p><br>
-						<center><img src="system/images/projects/mozilla_nepal.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>hcoedevcircle.github.io</strong></p>
-						<p>Author : <a href="https://github.com/hcoedevcircle" target="_blank">HCOE Developers' Circle</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Project Page &nbsp;: <a href="https://github.com/hcoedevcircle/hcoedevcircle.github.io" target="_blank">hcoedevcircle.github.io gh-pages</a></p>
-						<p>Project Demo : <a href="http://hcoedevcircle.github.io" target="_blank">hcoedevcircle.github.io</a></p>
-						<p>Status : Work In Progress</p><br>
-						<center><img src="system/images/projects/hcoe_dev.jpg"></center>
-					</div>
-					<div>
-						<p id="title"><strong>looma-f5</strong></p>
-						<p>Author : <a href="https://github.com/nootanghimire" target="_blank">Nootan Ghimire</a></p>
-						<p>Developed In : HTML, CSS, Javascript, jQuery</p>
-						<p>Status : Work In Progress</p>
-					</div>
-				</div>
+				
 			</div>
 		</center>
 	</div>
