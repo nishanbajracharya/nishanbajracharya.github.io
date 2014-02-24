@@ -1,25 +1,14 @@
 <html>
 <head>
 	<title>Nishan13's Blog</title>
-	<link rel="stylesheet" type="text/css" href="../system/font/font.css">
-	<link rel="stylesheet" type="text/css" href="../system/style/main.css">
-	<link rel="stylesheet" type="text/css" href="../system/style/header.css">
-	<link rel="stylesheet" type="text/css" href="../system/style/content.css">
-
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="content.css">
 	<script type="text/javascript" src="../system/scripts/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="../system/scripts/datetime.js"></script>
-
-	<style>
-		iframe{
-			position:absolute;
-			top:0px;
-			left: 0px;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+	<script type="text/javascript" src="content.js"></script>
 </head>
-<body oncontextmenu="return false">
+<body oncontextmenu="return false" onload="getDateTime();">
 	<div id="header" class="header">
 		<center>
 			<span style="float:left; margin-left:4px;"><a href="http://www.github.com/Nishan13" target="_blank">Nishan13's Github</a></span>
@@ -28,11 +17,69 @@
 		</center>
 	</div>
 	<div id="content" class="content">
-		<center>
-			<div id="window" class="window">
-				<iframe src="articles/main.html" frameborder="0"></iframe>
+		<div id="title-bar" class="title-bar">
+			Blog Reader
+		</div>
+		<div id="window" class="window">
+			<div id="article-title" class="article-title">Nishan13's Blog</div>
+			<span style="font-weight:bold;color:#279">Articles</span>
+			<hr>
+			<ul id="article-list" class="article-list">
+				<li>
+					<img src="art-resource/art-ico-001.jpg" alt="">
+					<div id="article-desc">
+						<a id="title">Article 1</a><br>
+						<div id="article-info" class="article-info">Monday 2 Feb 2014 1:59 PM</div>
+						This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description <a href="article-001.html">[more..]</a>
+					</div>
+				</li>
+				<li>
+					<img src="art-resource/art-ico-002.jpg" alt="">
+					<div id="article-desc">
+						<a id="title">Article 2</a><br>
+						<div id="article-info" class="article-info">Monday 2 Feb 2014 1:59 PM</div>
+						This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description This is article description <a href="article-001.html">[more..]</a>
+					</div>
+				</li>
+			</ul>
+			<div id="archive-nav" class="archive-nav">
+				<ul>
+					<li><span id="year">2014</span>
+						<ul>
+							<li>2014</li>
+							<li>2013</li>
+							<li>2012</li>
+							<li>2011</li>
+							<li>2010</li>
+						</ul>
+					</li>
+					<li>January</li>
+					<li>February</li>
+					<li>March</li>
+					<li>April</li>
+					<li>May</li>
+					<li>June</li>
+					<li>July</li>
+					<li>August</li>
+					<li>September</li>
+					<li>October</li>
+					<li>November</li>
+					<li>December</li>
+				</ul>
 			</div>
-		</center>
+			<script>
+				$(function(){
+					$("#archive-nav ul li ul li").click(function(){
+						$("#archive-nav ul li #year").text($(this).text());
+					})
+				})
+			</script>
+			<!--
+			<div id="article-info" class="article-info">Monday 2 Feb 2014 1:59 PM</div>
+			<div id="article-main" class="article-main">
+				This is the main part of the article
+			</div>-->
+		</div>
 	</div>
 </body>
 </html>
