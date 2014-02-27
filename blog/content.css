@@ -50,7 +50,6 @@
 	margin-top: 20px;
 	font-size: 17px;
 }
-
 #article-list{
 	list-style: none;
 	margin-left: -40px;
@@ -156,5 +155,12 @@ hr{
 }
 #article-view{
 	width: 1000px;
-	border: none;
+}
+.art-link-all{
+	font-weight:bold;
+	color:#279;
+	font-size: 18px;
+}
+.art-link{
+	font-size: 17px;
 }
