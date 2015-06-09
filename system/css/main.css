@@ -371,6 +371,9 @@ footer .f-right img:hover {
     #pre-main {
         height: 360px;
     }
+    #pre-main img,#pre-main svg{
+    	display: none;
+    }
     .box {
         width: 95%;
     }
