@@ -18,9 +18,6 @@ $(function() {
             $("#pre-main p").addClass("show");
         }
     })
-    $("body").css({
-    	backgroundSize : $(window).width()+"px "+$(window).height()+"px"
-    })
     $(".principle").appear(function() {
         $(this).addClass("show");
     },{accY: -300})
