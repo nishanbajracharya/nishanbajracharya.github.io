@@ -372,7 +372,7 @@ footer .f-right img:hover {
 
 @media screen and (max-width: 650px) {
     body {
-        background-size: auto;
+        background-image:url(../images/background-mobile.jpg);
     }
     #pre-main {
         height: 360px;
