@@ -374,6 +374,9 @@ footer .f-right img:hover {
     #pre-main img,#pre-main svg{
     	display: none;
     }
+    #pre-main h1{
+    	margin-top: 100px;
+    }
     .box {
         width: 95%;
     }
