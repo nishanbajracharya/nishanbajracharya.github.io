@@ -5,15 +5,13 @@
     padding: 0;
 }
 
-body {
+html {
 	background-color: #444;
-    background-image: url(../images/background.jpg);
+    background: url(../images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
