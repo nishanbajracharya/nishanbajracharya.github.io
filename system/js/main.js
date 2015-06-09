@@ -18,6 +18,7 @@ $(function() {
             $("#pre-main p").addClass("show");
         }
     })
+    $("#pre-main").height($(window.height()));
     $(".principle").appear(function() {
         $(this).addClass("show");
     },{accY: -300})
