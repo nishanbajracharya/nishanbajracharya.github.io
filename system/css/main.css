@@ -6,7 +6,8 @@
 }
 
 body {
-    background: url(../images/background.jpg);
+	background-color: #444;
+    background-image: url(../images/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
