@@ -22,7 +22,7 @@ body {
 }
 #bg{
     position: fixed;
-    width: 100%;
+    height: 120%;
     top:0;
     left: 0;
     z-index: -1;
@@ -45,6 +45,10 @@ header.show {
 
 header.show2 {
     background: #228b22;
+}
+
+header.show3 {
+    background: #a22;
 }
 
 header .right {
@@ -97,6 +101,15 @@ header ul li.show2:hover {
     border-bottom: none;
 }
 
+header ul li.show3 {
+    border-left: 1px solid #922;
+}
+
+header ul li.show3:hover {
+    background: #922;
+    border-bottom: none;
+}
+
 #pre-main {
     text-align: center;
     color: #fff;
@@ -145,6 +158,13 @@ header ul li.show2:hover {
     width: calc(100% - 40px);
     padding: 20px;
     background: #fff;
+    color: #333;
+}
+
+#works{
+    width: calc(100% - 40px);
+    padding: 20px;
+    background: #efefef;
     color: #333;
 }
 
@@ -266,6 +286,33 @@ ul #close {
     right: 0px;
 }
 
+#works a{
+    color: #333;
+}
+#works .project-list li:hover{
+    background: #ddd;
+}
+.project-list{
+    display: block;
+    list-style: none;
+}
+
+.project-list li{
+    padding: 10px;
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.project-list li .p-title{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.project-list li img{
+    width: 100%;
+    border:1px solid #ddd;
+}
+
 footer {
     width: calc(100% - 40px);
     background: #333;
@@ -374,6 +421,9 @@ footer .f-right img:hover {
     #pre-main p {
         display: none;
     }
+    .project-list li{
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -413,6 +463,9 @@ footer .f-right img:hover {
     }
     footer .f-left,footer .f-right{
     	width: 49%;
+    }
+    .project-list li{
+        width: 40%;
     }
 }
 
@@ -472,6 +525,9 @@ footer .f-right img:hover {
     }
     footer button{
     	width: 100%;
+    }
+    .project-list li{
+        width: 90%;
     }
 }
 
