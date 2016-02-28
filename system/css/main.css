@@ -8,10 +8,10 @@ html{
 	height: 100%;
 }
 body {
-    background-image: url(../images/background-mobile.jpg);
+    /*background-image: url(../images/background-mobile.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: 0px 0px;
     -webkit-background-size: cover!important;
     -moz-background-size: cover!important;
     -o-background-size: cover!important;
@@ -20,7 +20,13 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
-
+#bg{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
 header {
     position: fixed;
     width: calc(100% - 20px);

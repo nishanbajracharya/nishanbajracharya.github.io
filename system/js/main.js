@@ -17,6 +17,7 @@ $(function() {
         if ($(window).scrollTop() > $(window).height() / 4) {
             $("#pre-main p").addClass("show");
         }
+        $("#bg").css("top",(-$(window).scrollTop()/5)+"px");
     })
     $(".principle").appear(function() {
         $(this).addClass("show");
