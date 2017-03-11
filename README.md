@@ -1,2 +1,2 @@
-Nishan13.github.io
+nishanbajracharya.github.io
 ==================
