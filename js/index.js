@@ -37,7 +37,7 @@ function createRepoItem(repo, username, index) {
 
   el.innerHTML = `<div class="pb-full relative">
     <div class="absolute inset-0 flex">
-      <a target="_blank" rel="noopener noreferrer" href="${generateRepoURL(
+      <a target="_blank" rel="noopener noreferrer" title="${repo.description}" href="${generateRepoURL(
         repo.repo,
         username
       )}" class="block relative w-full m-2 rounded gradient-${

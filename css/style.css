@@ -4,15 +4,15 @@ body {
 }
 
 .h-screen-1-4 {
-  height: 25vh;
+  min-height: 25vh;
 }
 
 .h-screen-1-2 {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .h-screen-3-4 {
-  height: 75vh;
+  min-height: 75vh;
 }
 
 .pb-full {
