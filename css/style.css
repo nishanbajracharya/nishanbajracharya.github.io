@@ -1,0 +1,12 @@
+body {
+  background: #efefef;
+  font-family: 'Nunito', sans-serif;
+}
+
+.h-screen-1-4 {
+  height: 25vh;
+}
+
+.h-screen-1-2 {
+  height: 50vh;
+}
