@@ -1,6 +1,6 @@
 body {
   background: #efefef;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .h-screen-1-4 {
@@ -25,4 +25,24 @@ body {
 
 .left-1-2 {
   left: 50%;
+}
+
+.gradient-blue {
+  background: #7474bf;
+  background: linear-gradient(to bottom, #348ac7, #7474bf);
+}
+
+.gradient-cherry {
+  background: #eb3349;
+  background: linear-gradient(to top, #f45c43, #eb3349);
+}
+
+.gradient-reaqua {
+  background: #799f0c;
+  background: linear-gradient(to top, #acbb78, #799f0c);
+}
+
+.gradient-orange {
+  background: #ff8008;
+  background: linear-gradient(to top, #ffc837, #ff8008);
 }

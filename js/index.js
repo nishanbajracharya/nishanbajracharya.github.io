@@ -9,6 +9,8 @@ projectsEl.classList.add("hidden");
 const USERNAME = "nishanbajracharya";
 const REPO_COUNT = 4;
 
+const GRADIENTS = ["blue", "cherry", "reaqua", "orange"];
+
 function getPinnedRepos(username) {
   fetch(`https://gh-pinned-repos.now.sh/?username=${username}`)
     .then((res) => res.json())
@@ -30,7 +32,7 @@ function createRepoItem(repo, username, index) {
 
   el.setAttribute(
     "class",
-    `w-1/3 sm:w-1/4 ${index === 3 ? "hidden sm:inline-block" : "inline-block"}`
+    `w-1/3 sm:w-1/4 ${index > 2 ? "hidden sm:inline-block" : "inline-block"}`
   );
 
   el.innerHTML = `<div class="pb-full relative">
@@ -38,8 +40,10 @@ function createRepoItem(repo, username, index) {
       <a target="_blank" rel="noopener noreferrer" href="${generateRepoURL(
         repo.repo,
         username
-      )}" class="block relative w-full m-2 rounded border border-solid shadow transform hover:-translate-y-1 hover:scale-105 transition duration-150 ease-in-out">
-        <span class="absolute top-1-2 w-full text-center transform -translate-y-1/2 font-semibold text-gray-700">${
+      )}" class="block relative w-full m-2 rounded gradient-${
+    GRADIENTS[index]
+  } shadow transform hover:-translate-y-1 hover:scale-105 transition duration-150 ease-in-out">
+        <span class="absolute top-1-2 w-full text-center transform -translate-y-1/2 font-semibold text-white">${
           repo.repo
         }</span>
       </a>
