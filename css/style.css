@@ -10,3 +10,19 @@ body {
 .h-screen-1-2 {
   height: 50vh;
 }
+
+.h-screen-3-4 {
+  height: 75vh;
+}
+
+.pb-full {
+  padding-bottom: 100%;
+}
+
+.top-1-2 {
+  top: 50%;
+}
+
+.left-1-2 {
+  left: 50%;
+}
