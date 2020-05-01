@@ -1,198 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nishan Bajracharya</title>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Nisbaj - Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<script src="system/js/jquery.min.js"></script>
-	<script src="system/js/jquery.appear.js"></script>
-	<script src="system/js/main.js"></script>
-	<link rel="stylesheet" href="system/css/main.css">
-	<link rel="shortcut icon" href="system/images/icon.png" type="image/x-icon" />
-</head>
-
-<body>
-	<img src="system/images/background-mobile.jpg" alt="" id="bg">
-	<div id="home"></div>
-	<header>
-		Nisbaj's Arrow To The Knee
-		<ul>
-			<a href="#home"><li>HOME</li></a>
-			<a href="#main"><li>ABOUT</li></a>
-			<a href="#works"><li>WORKS</li></a>
-			<a href="#contact"><li>CONTACT</li></a>
-		</ul>
-	</header>
-	<div id="pre-main">
-		<style>
-			@-moz-document url-prefix() {
-				.clip-circle{
-					mask:url(#mask);
-				}
-			}
-		</style>
-		<svg height="0" style="margin-left:-300px">
-			<mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-				<circle cx="0.5" cy="0.5" r="0.5" id="circle" fill="white"/>
-			</mask>
-		</svg>
-		<img src="system/images/profile.png" alt="" class="clip-circle">
-		<h1>Nishan Bajracharya</h1>
-		<h2>UI and UX Designer</h2>
-		<p>HTML/CSS Designer, Javascript & jQuery Developer with interests in PHP/Python. Gaming, TV Shows, Movies, Tech, etc. Overall a geek. <br>Die Hard Manchester United Fan.</p>
-	</div>
-	<div id="main">
-		<div id="skills" class="box">
-			<p class="title">Level Of Expertise</p>
-			<ul>
-				<li>
-					<img src="system/images/html5.png" alt="">
-					<p>Learned in <strong>HTML5</strong> and <strong>semantic layout</strong> with emphasis on <strong>minimal UI</strong> and layout that <strong>fits the content</strong>.</p>
-				</li>
-				<li>
-					<img src="system/images/css3.png" alt="">
-					<p>Experienced in <strong>CSS3</strong> with appropriate knowledge of <strong>design patterns</strong> and <strong>color theory</strong>. <strong>Browser-specific CSS</strong> and <strong>media queries</strong> for <strong>Responsive Design</strong>.</p>
-				</li>
-				<li>
-					<img src="system/images/jquery.png" alt="">
-					<p>Well versed in core <strong>Javascript</strong>, <strong>jQuery</strong> and the <strong>jQuery UI</strong> plugin. Experienced in implementing <strong>jQuery plugins</strong> in the document and building <strong>custom plugins</strong> to suit the needs.</p>
-				</li>
-				<li>
-					<img src="system/images/d3js.png" alt="">
-					<p>Worked in <strong>visualization</strong> using <strong>D3.js</strong> library. Briefly worked in data visualization and representation of charts and graphs based on <strong>color theory</strong>.</p>
-				</li>
-			</ul>
-			<p class="more">more...</p>
-			<div class="more-skills">
-				<ul>
-					<img src="system/images/close.png" alt="" id="close">
-					<p class="title" style="margin:10px;margin-left:20px">Intermediate Skills</p>
-					<p style="margin:5px;margin-left:20px">More skills I've dabbled in...</p>
-					<center>
-						<li><img src="system/images/python.png" alt=""></li>
-						<li><img src="system/images/angularjs.png" alt=""></li>
-						<li><img src="system/images/nodejs.png" alt=""></li>
-						<li><img src="system/images/laravel.png" alt=""></li>
-						<li><img src="system/images/wp.png" alt=""></li>
-						<li><img src="system/images/cpp.png" alt=""></li>
-						<li><img src="system/images/photoshop.png" alt=""></li>
-						<li><img src="system/images/flash.png" alt=""></li>
-						<li><img src="system/images/unity.png" alt=""></li>
-						<li><img src="system/images/unreal.png" alt=""></li>
-					</center>
-				</ul>
-			</div>
-		</div>
-		<div id="principles" class="box">
-			<p class="title">Design Principles</p>
-			<div id="principle1" class="principle">
-				<img src="system/images/principle1.jpg" alt="">
-				<p>A minimal UI that's pleasing to the eye and doesn't distract your work.</p>
-			</div>
-			<div id="principle2" class="principle">
-				<img src="system/images/principle2.jpg" alt="">
-				<p>A Responsive design approach that's fitted for most common devices.</p>
-			</div>
-			<div id="principle3" class="principle">
-				<img src="system/images/principle3.jpg" alt="">
-				<p>Use of Color Theory to design the page based on the content.</p>
-			</div>
-			<div id="principle4" class="principle">
-				<img src="system/images/principle4.jpg" alt="">
-				<p>Creative and Innovative approach to design.</p>
-			</div>
-		</div>
-	</div>
-	<div id="works">
-		<div class="box">
-			<p class="title">My Projects</p>
-			<center>
-				<ul class="project-list">
-					<a href="CSS_baseclass/"><li>
-						<p class="p-title">CSS Baseclass</p>
-						<img src="system/images/projects/css_baseclass.jpg" alt="">
-						<p class="p-info">An alternative to Twitter's Bootstrap</p>
-					</li></a>
-					<a href="mac_on_the_web"><li>
-						<p class="p-title">Mac on the Web</p>
-						<img src="system/images/projects/mac_on_the_web.jpg" alt="">
-						<p class="p-info">The Mac OSX interface recreated for the Web</p>
-					</li></a>
-					<a href="http://nootanghimire.github.io/mozilla-nepal.org/"><li>
-						<p class="p-title">Mozilla Nepal Website Prototype</p>
-						<img src="system/images/projects/mozilla_nepal.jpg" alt="">
-						<p class="p-info">A design prototype for Mozilla Nepal website</p>
-					</li></a>
-					<a href="nOS/"><li>
-						<p class="p-title">nOS</p>
-						<img src="system/images/projects/nOS.jpg" alt="">
-						<p class="p-info">A design for a concept operating system</p>
-					</li></a>
-					<a href="https://github.com/Nishan13/webfiddle"><li>
-						<p class="p-title">Web Fiddle</p>
-						<img src="system/images/projects/webfiddle.jpg" alt="">
-						<p class="p-info">Interface for realtime web programming</p>
-					</li></a>
-					<a href=""><li>
-						<p class="p-title">Mobile OS</p>
-						<img src="system/images/projects/mobile_os.jpg" alt="">
-						<p class="p-info">Mobile OS Concept</p>
-					</li></a>
-					<a href=""><li>
-						<p class="p-title">Social Dashboard</p>
-						<img src="system/images/projects/social.jpg" alt="">
-						<p class="p-info">Social Dashboard Concept</p>
-					</li></a>
-					<a href="https://github.com/nootanghimire/logicsim-js"><li>
-						<p class="p-title">LogicSim</p>
-						<img src="system/images/projects/logic.jpg" alt="">
-						<p class="p-info">A logic gate simulator</p>
-					</li></a>
-					<a href=""><li>
-						<p class="p-title">Visualizations</p>
-						<img src="system/images/projects/vis.jpg" alt="">
-						<p class="p-info">Small scale visualization projects.</p>
-					</li></a>
-				</ul>
-			</center>
-			<p class="title">More Design Works</p>
-			<ul style="margin-left: 40px">
-				<li><strong>oWrite</strong> : Online collaborative writing submitted for Locus | <a href="https://github.com/nootanghimire/oWrite">https://github.com/nootanghimire/oWrite</a></li>
-				<li><strong>PCompanion</strong> : Frontend for Android Project.</li>
-				<li>Works done in javascript libraries like FabricJS, impress.js, AngularJS and more.</li>
-			</ul>
-		</div>
-	</div>
-	<footer id="contact">
-		<div id="info" class="box">
-			<p class="title">Contact Me</p>
-			<div class="f-left">
-				<p style="font-weight:bolder">Send Me Mail</p>
-				<input type="text" placeholder="Name *" required>
-				<input type="email" placeholder="Email *" required>
-				<input type="text" placeholder="Subject">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Message *" required></textarea>
-				<button>Send Mail</button> (E-mail feature doesn't work because it is hosted in github.)
-			</div>
-			<div class="f-right">
-				<p style="font-weight:bolder">Basic Contact Details</p>
-				<p>Nishan Bajracharya</p>
-				<p>Sankhamul, Kathmandu</p>
-				<p>Nepal</p>
-				<p>9841363627</p>
-				<p style="font-weight:bolder;margin-top:40px">Connect via Social Media</p>
-				<a href="http://www.facebook.com/Nisbaj"><img src="system/images/facebook.png" alt=""></a>
-				<a href="http://www.twitter.com/Nishan_cd"><img src="system/images/twitter.png" alt=""></a>
-				<a href="http://www.github.com/Nishan13"><img src="system/images/github.png" alt=""></a>
-				<a href="https://www.linkedin.com/profile/view?id=284188962&trk=nav_responsive_tab_profile"><img src="system/images/linkedin.png" alt=""></a>
-				<a href="https://plus.google.com/+NishanBajracharya"><img src="system/images/google+.png" alt=""></a>
-			</div>
-
-		</div>
-
-	</footer>
-	<p class="cpy">Copyright &copy; Nishan Bajracharya 2015</p>
-</body>
-
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div
+      class="container mx-auto h-screen-3-4 flex flex-col justify-between content-center pt-16 lg:pt-32 w-full"
+    >
+      <div>
+        <div
+          class="text-center w-32 h-32 relative mx-auto rounded-full overflow-hidden bg-gray-700"
+        >
+          <img src="" alt="NB" id="user-profile" />
+        </div>
+        <h1
+          class="font-semibold text-center text-3xl sm:text-5xl text-gray-800"
+        >
+          NISHAN BAJRACHARYA
+        </h1>
+        <h3 class="font-light text-center text-2xl sm:text-3xl text-gray-700">
+          Frontend Developer
+        </h3>
+        <h3 class="font-light text-center text-xl text-gray-700 pt-2">
+          React | React Native | Node.js | Golang
+        </h3>
+      </div>
+      <div id="featured-projects">
+        <h3
+          class="font-light text-center text-xl sm:text-3xl text-gray-700 w-full"
+        >
+          Featured Projects
+        </h3>
+        <div class="mx-auto w-full sm:w-1/2 px-4 sm:px-0">
+          <ul id="featured-projects-list"></ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto w-full flex justify-center content-center lg:pt-8"
+    >
+      <div
+        class="links flex flex-1 self-center justify-around sm:justify-center"
+      >
+        <a
+          href="mailto:nisbaj11@gmail.com"
+          class="text-3xl p-4 text-gray-700 hover:text-teal-700 transform hover:scale-105 transition duration-150 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><ion-icon name="mail"></ion-icon
+        ></a>
+        <a
+          href="https://www.github.com/nishanbajracharya"
+          class="text-3xl p-4 text-gray-700 hover:text-black transform hover:scale-105 transition duration-150 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a
+          href="https://dribbble.com/nisbaj"
+          class="text-3xl p-4 text-gray-700 hover:text-pink-700 transform hover:scale-105 transition duration-150 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><ion-icon name="logo-dribbble"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nisbaj/"
+          class="text-3xl p-4 text-gray-700 hover:text-blue-700 transform hover:scale-105 transition duration-150 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>
